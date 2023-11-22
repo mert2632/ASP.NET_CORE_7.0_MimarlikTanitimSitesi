@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="~/css/musteri.css"/>
+@model IEnumerable<Admin>
+
+ 
+    <!-- Your content here -->
+    <h2 style="margin: 10px;">ADMİN LİSTESİ</h2>
+
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(m=>m.AdminID)</th>
+                <th>@Html.DisplayNameFor(m=>m.username)</th>
+                <th>@Html.DisplayNameFor(m=>m.password)</th>
+                <th>@Html.DisplayNameFor(m=>m.confirmpassword)</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var admin in Model)
+            {
+            <tr>
+                <td>@admin.AdminID</td>
+                <td>@admin.username</td>
+                <td>@admin.password</td>
+                <td>@admin.confirmpassword</td>
+                
+                <td>
+                    <a asp-controller="Admin"asp-action="AdminGüncelle" asp-route-id="@admin.AdminID" class="action-button"><button class="action-button">ADMİN Güncelle</button></a>
+
+                     <a  asp-controller="Admin"asp-action="AdminSil" asp-route-id="@admin.AdminID" class="action-button1" ><button class="action-button1" >ADMİNİ Sil</button></a>   
+                    
+                </td>
+                              <!-- Add more columns as needed -->
+            </tr>
+            }
+        </tbody>
+    </table>
+

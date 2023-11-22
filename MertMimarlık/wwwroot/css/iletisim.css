@@ -1,0 +1,80 @@
+.iletisimSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:40px;
+    width: 100%;
+    height: 350px;
+    background-color: rgb(219, 217, 217);
+}
+.iletisimSection .col2{
+    width: 45%;
+    height: 100%;
+   
+}
+.iletisimSection .col2 iframe{
+    width: 100%;
+    height: 350px
+}
+.iletisimSection .col2 h1{
+    color: rgb(113, 146, 181);
+    font-size: 35px;
+}
+
+.iletisimSection .col2 p{
+
+    color: rgb(95, 144, 177);
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.iletisimSection .col2 h2{
+    transition: 1s ease;
+}
+
+
+ .iletisimContents h2:hover{
+
+    color: rgb(55, 150, 181);
+    cursor: default;
+}
+
+.iletisimForm{
+  
+    display: inline-block;
+    padding: 5%;
+    width: 95%;
+    margin-top:40px;
+}   
+
+.iletisimForm label{
+
+    display: block;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.iletisimForm input{
+    width: 100%;
+    font-size: 20px;
+    height: 35px;
+    padding: 5px;
+}
+
+.iletisimForm textarea{
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border-color: gray;
+    resize: vertical;
+}
+
+@media only screen and (max-width: 600px) {
+    .iletisimSection{
+        display: block;
+    }
+
+    .iletisimSection .col2{
+        width: 100%;
+    }
+  }

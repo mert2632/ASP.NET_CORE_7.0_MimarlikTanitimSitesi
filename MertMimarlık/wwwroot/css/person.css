@@ -1,0 +1,166 @@
+
+.personelSection{
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    width: 100%;
+    height: auto;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: space-around;
+}
+
+.personelSection .col2{
+    text-align: center;
+    width: 35%;
+    height: 100%;
+    font-size: 20px;
+}
+.personelSection img{
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+/* personel cart */
+.personel-card {
+position: relative;
+width: 370px;
+height: 460px;
+margin-top: 70px;
+margin-bottom: 70px;
+background: rgb(66, 66, 161);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.personel-card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgb(17, 17, 135) ;
+}
+
+.personel-card::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgb(246, 246, 17);
+filter: blur(30px);
+}
+
+.personel-card b {
+position: absolute;
+inset: 6px;
+background: rgba(0, 0, 0, 0.6);
+z-index: 2;
+}
+
+.personel-card img {
+position: absolute;
+z-index: 3;
+scale: 0.8;
+opacity: 0.25;
+transition: 0.5s;
+}
+
+.personel-card:hover img {
+scale: 0.5;
+opacity: 0.9;
+transform: translateY(-70px);
+}
+
+.personel-card .content {
+position: absolute;
+z-index: 3;
+bottom: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+transform: scale(0);
+transition: 0.5s;
+}
+
+
+.personel-card:hover .content {
+transform: scale(1);
+bottom: 25px;
+}
+
+.content .title {
+position: relative;
+color: #fff;
+font-weight: 500;
+line-height: 1em;
+font-size: 1em;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+text-align: center;
+}
+
+.content .title span {
+font-weight: 300;
+font-size: 0.70em;
+}
+
+.content .sci {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+margin-top: 5px;
+}
+
+.sci li {
+list-style: none;
+}
+
+.sci li .fa-brands {
+width: 14px;
+}
+
+.sci li .fa-facebook {
+width: 10px;
+}
+
+.sci li a {
+position: relative;
+text-decoration: none;
+color: rgba(255, 255, 255, 0.5);
+background: rgba(0, 0, 0, 0.2);
+fill: currentColor;
+width: 30px;
+height: 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 4px;
+transition: 0.5s;
+}
+
+.sci li a:hover {
+fill: currentColor;
+color: rgba(255, 255, 255, 1);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .personelSection{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .personel-card{
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 20px;
+    }
+  }

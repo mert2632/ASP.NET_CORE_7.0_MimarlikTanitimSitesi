@@ -1,0 +1,65 @@
+
+/* Genel stil ayarları */
+.iletisimForms {
+    max-width: 400px;
+    margin: 50px auto 60px; 
+    margin-top: 50px; /* Yatayda merkezleme ve üst alt mesafeyi ayarlamak için */
+    margin-bottom: 70px;
+}
+
+/* Form başlığı */
+.iletisimForms h3 {
+    color: #333;
+}
+
+/* Etiketlerin ve input alanlarının düzeni */
+.iletisimForms label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: rgba(16, 15, 15, 0.962);
+}
+
+.iletisimForms input[type="text"],
+.iletisimForms input[type="password"],
+.iletisimForms textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* Gönder buttonu */
+.iletisimForms button {
+    background-color: rgb(73, 142, 173);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 170px;
+}
+
+/* Gönder buttonu ikonu */
+.svg-wrapper {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Başarı mesajı */
+.alert {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Başarı mesajı başlık stil */
+.alert h3 {
+    margin-top: 25px;
+    color: #373783;
+    padding-left: 10px;
+}

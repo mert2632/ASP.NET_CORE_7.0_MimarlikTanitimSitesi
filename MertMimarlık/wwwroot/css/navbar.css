@@ -1,0 +1,71 @@
+
+/* menü butonu  IŞIKLI*/
+/* menü butonu  IŞIKLI*/
+.menu-buton{
+  padding: 10px 15px;
+  height: 5px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+
+  text-shadow: none;
+  background: transparent;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+
+  font-weight: bold;
+  color: rgb(116, 142, 186);
+}
+.logo{
+      display: flex; 
+      margin-left: 9px;
+  }
+
+  .Btn-hamburger{
+    display: block;
+  }
+
+#btn:hover  {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff,
+              0 0 10px #ffffff,
+              0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff,
+              0 0 20px  #008cff,
+              0 0 50px  #008cff,
+              0 0 100px  #008cff;
+}
+
+
+/* hamburger buton */
+/* hanburger buton */
+/*üst sosyal medya */
+
+
+
+.Btn-hamburger{
+background: #f09433;
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+display: none;
+}
+.whatsappDiv{
+width: 75px;
+height: 75px;
+right: 50px;
+bottom: 50px;
+position: absolute;
+position: fixed;
+border-radius: 50%;
+z-index: 5;
+
+}
+.whatsappDiv .whatsapResim{
+width: 100%;
+}

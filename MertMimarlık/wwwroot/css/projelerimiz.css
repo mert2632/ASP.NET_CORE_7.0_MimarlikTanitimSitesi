@@ -1,0 +1,35 @@
+.projeSection{
+       
+    padding-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.baslik{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: rgb(113, 146, 181);
+}
+
+.projeSection .col2{
+    width: 50%;
+    height: 100px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .projeSection{
+        display: block;
+    }
+
+    .projeSection .col2{
+        width: 100%;
+        
+    }
+  }

@@ -1,0 +1,22 @@
+@model Admin
+@{
+    ViewData["Title"] = "Admin Girişi";
+}
+<link rel="stylesheet" href="~/css/adminforms.css"/>
+<div style="text-align:center;" > 
+
+<form class="iletisimForms" method="post" action="Login">
+    <h2>ADMİN GİRİŞ</h2>
+    <label for="username">Kullanıcı Adı:</label>
+    <input type="text" name="Username"  required>
+   
+
+    <label for="password">Şifre:</label>
+    <input type="password" name="Password"  required>
+   
+
+    <button type="submit">Giriş Yap</button>
+</form>
+
+<p>@ViewBag.ErrorMessage</p>
+</div>

@@ -1,0 +1,38 @@
+.triangle {
+    background-color: transparent;
+    height: 0px;
+    width: 0px;
+    border-style: solid;
+    border-width: 20px 20px 20px 20px; /* Değişiklik burada */
+    border-radius: 2px;
+    border-color: #00ff83 #00e676 #00cc69 #00e676;
+    animation: animtrgl 3s infinite ease;
+  }
+  
+  @keyframes animtrgl {
+    0% {
+      border-width: 20px 30px 20px 10px; /* Değişiklik burada */
+      transform: scale(1.4); /* Değişiklik burada */
+    }
+  
+    25% {
+      border-width: 10px 20px 30px 20px; /* Değişiklik burada */
+      transform: scale(1.3); /* Değişiklik burada */
+    }
+  
+    50% {
+      border-width: 20px 10px 20px 30px; /* Değişiklik burada */
+      transform: scale(1.4); /* Değişiklik burada */
+    }
+  
+    75% {
+      border-width: 30px 20px 10px 20px; /* Değişiklik burada */
+      transform: scale(1.3); /* Değişiklik burada */
+    }
+  
+    100% {
+      border-width: 20px 30px 20px 10px; /* Değişiklik burada */
+      transform: scale(1.4); /* Değişiklik burada */
+    }
+  }
+  

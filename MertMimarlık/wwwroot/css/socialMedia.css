@@ -1,0 +1,138 @@
+/*üst sosyal medya */
+.Btn-social-Top{
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25d366', endColorstr='#25d366', GradientType=1 );
+    overflow: hidden;
+  }
+  
+  
+  .Btn-instagram{
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  }
+  
+  .Btn-twitter {
+    background: #1da1f2;
+  }
+  
+  
+  .Btn-facebook{
+    background: #1877f2; /* Facebook mavi tonu */
+    background: -moz-linear-gradient(45deg, #1877f2 0%, #4b6cb7 25%, #5b7ab8 50%, #6a8cb9 75%, #7b9eba 100%);
+    background: -webkit-linear-gradient(45deg, #1877f2 0%, #4b6cb7 25%, #5b7ab8 50%, #6a8cb9 75%, #7b9eba 100%);
+    background: linear-gradient(45deg, #1877f2 0%, #4b6cb7 25%, #5b7ab8 50%, #6a8cb9 75%, #7b9eba 100%);
+  }
+  
+  .Btn-whatsapp{
+    background: #25d366; /* WhatsApp yeşil tonu */
+    background: -moz-linear-gradient(45deg, #25d366 0%, #128c7e 25%, #075e54 50%, #128c7e 75%, #25d366 100%);
+    background: -webkit-linear-gradient(45deg, #25d366 0%, #128c7e 25%, #075e54 50%, #128c7e 75%, #25d366 100%);
+    background: linear-gradient(45deg, #25d366 0%, #128c7e 25%, #075e54 50%, #128c7e 75%, #25d366 100%);
+  }
+  
+  svg{
+    width: 25px;
+  }
+  
+  
+  
+  .svgIcon {
+    transition-duration: .3s;
+    width: 50px;
+  }
+  
+  .svgIcon path {
+    fill: white;
+    
+  }
+  
+  .text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+  }
+  .Btn-instagram:hover,
+  .Btn-facebook:hover,
+  .Btn-whatsapp:hover,
+  .Btn-twitter:hover
+   {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+  }
+  
+  .Btn-instagram:hover .text,
+  .Btn-facebook:hover .text,
+  .Btn-whatsapp:hover .text,
+  .Btn-twitter:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+  }
+  
+  .Btn-instagram:hover svg,
+  .Btn-whatsapp:hover svg,
+  .Btn-twitter:hover svg,
+  .Btn-facebook:hover svg {
+    opacity: 0;
+    transition-duration: .3s;
+    display: block;
+  }
+
+/* ALT SOSYAL MEDYA  1*/
+/* ALT SOSYAL MEDYA 1 */
+/* ALT SOSYAL MEDYA  1*/
+/* ALT SOSYAL MEDYA 1 */
+.redes {
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .redes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .redes a svg {
+    width: 30px;
+    fill: #ffffff;
+  }
+  
+  .redes .facebook {
+    background-color: rgb(0, 60, 255);
+  }
+  
+  .redes .whatsapp {
+    background: linear-gradient(45deg, #25D366, #128C7E);
+  }
+  
+  .redes .twitter {
+    background-color: #33BBFF;
+  }
+  
+  .redes .instagram {
+    background: linear-gradient(45deg, #833AB4, #FD1D1D, #F56040);
+  }
+  
+  .redes a:hover {
+    width: 90px;
+  } 

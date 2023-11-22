@@ -1,0 +1,151 @@
+.blogSection{
+    width:100%;
+    height: auto;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogSection .blogBaslik{
+    font-size: 35px;
+    margin-top: 20px;
+    color: rgb(242, 107, 11);
+}
+
+.blogDiv{
+    height: auto;
+    width: 60%;
+}
+
+.blogDiv img{
+    width: 100%;
+    height: 450px;
+}
+
+.sonBloglarDiv{
+    width: 30%;
+    height: 290px;
+    margin-top: 25px;
+    justify-content: space-between;
+   
+    background-color: white;
+    box-shadow : 5px 5px 5px black ,
+    5px 5px 100px  black;
+    display: block;
+    position: sticky;
+    top:100px;                
+}
+
+.sonBloglarDiv .sonBloglarTitleDiv{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(239, 114, 5);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sonBloglarDiv .sonBlogCard{
+    margin-bottom: 5px;
+    width: 100%;
+    height: 75px;
+    background-color: rgb(230, 223, 223);
+}
+
+
+.sonBlogCard{
+    display: flex;
+}
+
+.sonBlogCard:hover{
+    display: flex;
+    box-shadow: 0 0 5px #008cff, 0 0 50px #008cff, 0 0 100px #008cff;    
+    background-color: #008cff;
+    color: white;
+}
+
+
+
+.sonBlogCard img{
+    width: 120px;
+    height: 100%
+}
+
+.sonBlogCard .sonBlogBilgiDiv{
+    margin-left: 6px;
+}
+
+.sonBlogBilgiDiv h3{
+    color: rgb(240, 106, 10);
+    font-size: 20px;
+}
+
+
+
+.sonBlogBilgiDiv .blogTarih{
+    margin-top: 5px;
+}
+
+.sonBlogBilgiDiv .blogYazar{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.sonBlogButon{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(65, 64, 63);
+    border-radius: 50%;
+    position: absolute;
+    position: fixed;
+    top: 90px;
+    right: 2.5%;
+    font-size: 45px;
+    color: white;
+    display: none;
+    cursor: pointer;
+    /* yazının ortalanması için */
+    text-align: center;
+    z-index: 5;
+    
+}
+
+
+
+.sonBlogButon:hover{
+    background-color: rgb(255, 213, 0);
+    box-shadow: 0 0 5px rgb(255, 213, 0),
+    0 0 20px yellow,
+    0 0 100px yellow;
+}
+
+@media only screen and (max-width: 1000px) {
+    .blogSection{
+    display: block;
+    }
+    .blogDiv{
+    width: 100%;
+    }
+
+    .sonBlogButon{
+        display: block;
+    }
+
+    .sonBloglarDiv{
+    width: 100%;
+    }
+
+    .sonBloglarDiv{
+    width: 100%;
+    position: absolute;
+    position: fixed;
+    top: 60px;
+    right: 2%;
+    cursor: pointer;
+    display: none;
+    }
+}
+    

@@ -1,0 +1,137 @@
+nav{
+          
+    width: 100%;
+    height: 75px; 
+    background-color: rgb(51, 51, 63); 
+    font-size: 25px;
+    justify-items: center;
+    position:fixed;
+    z-index: 5;;
+}
+
+.container{
+    padding-left: 10px;
+    padding-right: 15px;
+    height: 55px;
+    padding-top: 18px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.carousel{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(100, 72, 130);
+   
+    background-color: goldenrod;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(../img/ımageAnasayfa.jpg);
+    background-size: cover;
+}
+
+.carousel h1{
+    color:darkgray;
+    font-size: 45px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+/* Fotoğraf ve metin divleri */
+
+.ContentAndFoto{
+margin-top: 15px;
+width: 100%;
+height: auto;
+
+display: flex;
+justify-content: space-around;
+padding: 15px;
+
+}
+
+.ContentAndFoto .col2{
+width: 50%;
+
+height: 400px;
+
+}
+
+.ContentAndFoto .col2 img{
+width: 95%;
+height: 95%;
+margin-top: 2.5%;
+margin-left: 2.5%;
+border-radius: 5%;
+
+}
+
+.ContentAndFoto .col2 .TitleAndContent{
+width: 95%;
+height: 95%;
+margin-top: 2.5%;
+
+margin-left: 2.5%;
+}
+
+.OneImageSection{
+margin-top: 15px;
+width: 100%;
+height: auto;
+
+}
+
+.OneImageSection .OneImageDiv{
+width: 100%;
+height: 100%;
+text-align: center;
+}
+.OneImageSection .OneImageDiv img{
+width: 55%;
+height: 450px;
+border-radius: 50px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .home-contents{
+        display: block;
+    }
+    
+    .ContentAndFoto{
+      display: block;
+    }
+
+    .ContentAndFoto .col2{
+        width: 100%;
+    }
+
+    .OneImageSection{
+        height: 300px;
+        
+    }
+
+    .OneImageSection .OneImageDiv img{
+        width: 90%;
+        height: 100%;
+    }
+
+    .TitleAndContent p {
+        max-width: 100%;
+    }
+
+    .logo h1{
+        font-size: 25px;
+    }
+
+    .carousel h2{
+        font-size: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+  }

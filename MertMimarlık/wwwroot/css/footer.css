@@ -1,0 +1,51 @@
+/* FOOTER */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(117, 141, 213);
+    padding-left: 2.5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 50px;
+    /* background-image : url(../img/ımagefooter4.jpg); */
+    background-size: 100%;
+    background-position: center;
+}
+footer .col3{
+    width: 32%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+footer .col3 span{
+
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: block;
+}
+
+footer .col3 p{
+color: rgb(14, 29, 118);
+font-size: 20px;
+margin-top: 20px;
+color:rgb(52, 8, 60);
+}
+
+
+@media only screen and (max-width: 600px) {
+        footer .col3 span{ 
+            font-size: 25px;
+        }
+        footer .col3 p{ 
+            font-size: 18px;
+        }
+  }
+

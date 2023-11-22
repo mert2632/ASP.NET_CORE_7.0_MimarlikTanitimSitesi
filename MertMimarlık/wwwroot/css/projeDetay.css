@@ -1,0 +1,153 @@
+.projeDetaySection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    margin-top: 60px;
+}
+
+.projeDetaySectionDiv{
+    width: 55%;
+}
+
+.projeDetaySection .resimDiv{
+    width: 100%; 
+    height: 470px;
+    margin-top: 50px;
+}
+
+
+.resimDiv img{
+    border-radius: 10px;
+}
+
+.projeDetaySectionDiv .projeBaslik{
+    font-size: 45px;
+    color: rgb(67, 72, 72);
+}
+
+
+
+/* SON PROJELER CARD */
+/* SON PROJELER CARD */
+/* SON PROJELER CARD */
+/* SON PROJELER CARD */
+
+.sonProjelerDiv{
+    height: 290px;
+    width: 30%;
+    margin-top: 25px;
+    position: sticky;
+    top: 150px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow : 5px 5px 5px black ,
+            5px 5px 100px  black;
+    
+}
+
+
+.sonProjelerDiv .sonProjelerTitleDiv{
+    width: 100%;
+    height: 55px;
+    background-color: rgb(239, 114, 5);
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.sonProjelerDiv .sonProjelerCard{
+    width: 100%;
+    height: 75px;
+    background-color: rgb(230, 223, 223);
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2.5%;
+    padding-right: 5%;
+}
+
+.sonProjelerCard:hover{
+    box-shadow: 0 0 5px #008cff, 0 0 50px #008cff, 0 0 100px #008cff;    
+    background-color: #008cff;
+    color: white;   
+}
+
+.sonProjeBilgi .sonProjeBaslik{
+    color: rgb(236, 106, 14);
+    font-size: 22px;
+}
+
+.projeGitButon{
+    padding: 10px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.sonProjeButon{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(65, 64, 63);
+    border-radius: 50%;
+    position: absolute;
+    position: fixed;
+    top: 90px;
+    right: 2.5%;
+    font-size: 45px;
+    color: white;
+    display: none;
+    cursor: pointer;
+    /* yazının ortalanması için */
+    text-align: center;
+    z-index: 5;
+    
+}
+
+
+
+.sonProjeButon:hover{
+    background-color: rgb(255, 213, 0);
+    box-shadow: 0 0 5px rgb(255, 213, 0),
+    0 0 20px yellow,
+    0 0 100px yellow;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .projeDetaySection{
+        display: block;
+    }
+    
+    
+    .projeDetaySectionDiv{
+        width: 100%;
+    }
+
+    .sonProjelerDiv{
+        width: 95%;
+        position: absolute;
+        position: fixed;
+        top: 62px;
+        display: none;
+    }
+
+    .sonProjeButon{
+        display: block;
+    }
+
+  }
+
+
+

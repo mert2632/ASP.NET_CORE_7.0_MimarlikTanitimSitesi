@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="~/css/musteri.css"/>
+@model IEnumerable<İletisimBilgileri>
+
+    <!-- Your content here -->
+    <h2 style="margin: 10px;">MUSTERİ LİSTESİ</h2>
+    <table class="custom-table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(m=>m.IletisimID)</th>
+                <th>@Html.DisplayNameFor(m=>m.AdSoyad)</th>
+                <th>@Html.DisplayNameFor(m=>m.Email)</th>
+                <th>@Html.DisplayNameFor(m=>m.TelefonNumarasi)</th>
+                <th>@Html.DisplayNameFor(m=>m.Konu)</th>
+                <th>@Html.DisplayNameFor(m=>m.Mesaj)</th>
+                <!-- Add more columns as needed -->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var musteri in Model)
+            {
+            <tr>
+    
+                <td>@musteri.IletisimID</td>
+                <td>@musteri.AdSoyad</td>
+                <td>@musteri.Email</td>
+                <td>@musteri.TelefonNumarasi</td>
+                <td>@musteri.Konu</td>
+                <td>@musteri.Mesaj</td>
+                <td>
+                    <a class="action-button"asp-controller="Admin"asp-action="Güncelle"
+                    asp-route-id="@musteri.IletisimID" ><button class="action-button">Güncelle</button></a>
+
+                     <a class="action-button1"asp-controller="Admin"asp-action="Sil"
+                     asp-route-id="@musteri.IletisimID" ><button class="action-button1" >Sil</button></a>   
+                    
+                </td>
+                              <!-- Add more columns as needed -->
+            </tr>
+            }
+        </tbody>
+    </table>

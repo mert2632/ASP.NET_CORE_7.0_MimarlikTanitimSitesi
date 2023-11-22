@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="~/css/musteri.css"/>
+@model Admin
+<p>
+    <div style="text-align: center;">
+        <div style="margin-top:20px;margin-bottom: 15px;"><div style="margin-bottom: 10px;"><b>@Model.username </b>  adlı admini silmek istediğinizden emin misiniz?</div>
+   
+        <form asp-action="AdminSil" method="post">
+       <input type="hidden" name="id" value="@Model.AdminID">
+            <a class="action-button"  asp-controller="Admin" asp-action="AdminListesi">
+                <button type="submit" class="action-button">EVET</button></a>
+             <a class="action-button1" asp-controller="Admin" asp-action="AdminListesi">
+                <button type="button" class="action-button1" >HAYIR</button></a>   
+     <!-- yukarıda submit ve buton özelliklerimiz önemli kontrollerden talep ve silme işlemini gerçeklestireceğimiz 
+     tuşa submit vermeliyiz bu kontrolden aldığı görevi gerçeklestir burda 2 saat oyalanmıstım-->
+        </form>   
+
+
+
+    </div>
+    
+</p>
